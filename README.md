@@ -41,7 +41,7 @@ make
 
 ## 📊 Live Monitor Interface
 
-![OBD2 Monitor Screenshot](path/to/screenshot.png)
+<img width="342" height="236" alt="OBD2_data" src="https://github.com/user-attachments/assets/5d7ea40f-0db2-4eed-8684-f69571a39e9a" />
 
 **Displayed Data:**
 - 🏎️ **RPM** - Engine revolutions per minute
@@ -59,7 +59,7 @@ make
 
 ## 🔧 Diagnostic Trouble Codes (DTCs) Display
 
-![DTC Display Screenshot](path/to/dtc-screenshot.png)
+<img width="343" height="146" alt="OBD2_fault_codes" src="https://github.com/user-attachments/assets/935c1e3a-3e06-438b-89ea-289b98ef828b" />
 
 When pressing **`d`**, the application reads and displays all active Diagnostic Trouble Codes from your vehicle, allowing you to identify and troubleshoot issues.
 
