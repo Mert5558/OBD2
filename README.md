@@ -39,6 +39,30 @@ make
 ./obd2_monitor
 ```
 
+## 📊 Live Monitor Interface
+
+![OBD2 Monitor Screenshot](path/to/screenshot.png)
+
+**Displayed Data:**
+- 🏎️ **RPM** - Engine revolutions per minute
+- 🚗 **Speed** - Vehicle speed in km/h
+- 🌡️ **Coolant Temp** - Engine coolant temperature
+- 💨 **Intake Temp** - Intake air temperature
+- ⛽ **Fuel Level** - Remaining fuel in percentage
+
+## ⌨️ Keyboard Controls
+
+- **`l`** - Toggle logging ON/OFF (creates `obd_log.csv` with real-time data)
+- **`d`** - Read and display Diagnostic Trouble Codes (DTCs)
+- **`c`** - Clear all Diagnostic Trouble Codes
+- **`q`** - Quit the application
+
+## 🔧 Diagnostic Trouble Codes (DTCs) Display
+
+![DTC Display Screenshot](path/to/dtc-screenshot.png)
+
+When pressing **`d`**, the application reads and displays all active Diagnostic Trouble Codes from your vehicle, allowing you to identify and troubleshoot issues.
+
 ## 🧹 Cleaning
 
 Remove object files and logs:
