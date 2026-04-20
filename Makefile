@@ -1,5 +1,5 @@
 CXX = g++
-CXXFLAGS = -std=c++17 -Wall -Wextra -O2 -Iinclude
+CXXFLAGS = -std=c++17 -Wall -Wextra -O2 -Iinclude -Wno-unused-result
 LDFLAGS = -pthread
 
 TARGET = obd2_monitor
