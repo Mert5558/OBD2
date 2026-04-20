@@ -1,16 +1,17 @@
 CXX = g++
-CXXFLAGS = -std=c++17 -Wall -Wextra -O2
+CXXFLAGS = -std=c++17 -Wall -Wextra -O2 -Iinclude
 LDFLAGS = -pthread
 
 TARGET = obd2_monitor
-SOURCES = main.cpp connection.cpp pids.cpp dtc.cpp logger.cpp
+SOURCES = src/main.cpp src/connection.cpp src/pids.cpp src/dtc.cpp src/logger.cpp
 OBJECTS = $(SOURCES:.cpp=.o)
-HEADERS = connection.h pids.h dtc.h logger.h
+HEADERS = include/connection.h include/pids.h include/dtc.h include/logger.h
 
 all: $(TARGET)
 
 $(TARGET): $(OBJECTS)
 	$(CXX) $(CXXFLAGS) -o $@ $^ $(LDFLAGS)
+	rm -f $(OBJECTS)
 
 %.o: %.cpp $(HEADERS)
 	$(CXX) $(CXXFLAGS) -c $< -o $@
