@@ -16,9 +16,12 @@ $(TARGET): $(OBJECTS)
 	$(CXX) $(CXXFLAGS) -c $< -o $@
 
 clean:
-	rm -f $(OBJECTS) $(TARGET) obd_log.csv
+	rm -f $(OBJECTS) obd_log.csv
+
+fclean: clean
+	rm -f $(TARGET)
 
 run: $(TARGET)
 	./$(TARGET)
 
-.PHONY: all clean run
+.PHONY: all clean fclean run
